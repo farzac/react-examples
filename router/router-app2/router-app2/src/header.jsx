@@ -5,7 +5,7 @@ export default props => {
         <div>
             <table>
                 <tr>
-                    <td colSpan="2">
+                    <td>
                         <h2>Login</h2>
                     </td>
                 </tr>
