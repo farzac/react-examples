@@ -6,6 +6,8 @@ import App from './App'
 import Users from './users'
 import Contact from './contact'
 import Login from './login'
+import PlannedCosts from './planned-costs'
+
 import Notfound from './notfound'
 
 const routing = (
@@ -24,6 +26,9 @@ const routing = (
         <li>
           <Link to="/login">Login</Link>
         </li>
+        <li>
+          <Link to="/planned-costs-detail">PlannedCosts</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={App} />
@@ -31,6 +36,7 @@ const routing = (
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
         <Route path="/users/:id" component={Users} />
+        <Route path="/planned-costs-detail/:id" component={PlannedCosts} />
         <Route component={Notfound} />
       </Switch>
     </div>
